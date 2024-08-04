@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.stereotype.Controller;
 
 @Controller
-public class AjaxController {
+public class UserController {
 
-    @GetMapping("/ajax")
+    @GetMapping("/user")
     @ResponseBody
-    public String handleAjaxRequest(@RequestParam(name = "param") String param) {
+    public String handleRequest(@RequestParam String param) {
         // Process the parameter and return a response
         return "Received parameter: " + param;
     }
