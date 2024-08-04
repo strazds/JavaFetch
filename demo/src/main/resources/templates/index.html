@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Thymeleaf Ajax Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <h1 th:text="${message}"></h1>
+    <input type="text" id="paramInput" placeholder="Enter parameter" />
+    <button id="ajaxButton">Send Ajax Request</button>
+    <div id="result"></div>
+    <script type="module" src="/utils/main.js"></script>
+  </body>
+</html>
