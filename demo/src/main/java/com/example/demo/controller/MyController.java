@@ -9,7 +9,7 @@ public class MyController {
 
     @GetMapping("/")
     public String index(Model model) {
-        model.addAttribute("message", "Thymeleaf Ajax Example");
+        model.addAttribute("title", "Thymeleaf Fetch Example");
         return "index";
     }
 }
